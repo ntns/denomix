@@ -1,4 +1,4 @@
-// Useful tagged template for jsx-like strings
+/** Tagged template that works similarly to JSX  */
 export function j(
   strings: TemplateStringsArray,
   ...substitutions: unknown[]
