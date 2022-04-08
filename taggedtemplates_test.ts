@@ -32,3 +32,9 @@ Deno.test("tagged template works with number substitutions", () => {
   const expected = `<span>3</span>`;
   assertEquals(got, expected);
 });
+
+Deno.test("tagged template works with substitution value of 0", () => {
+  const got = j`<span>${0}</span>`;
+  const expected = `<span>0</span>`;
+  assertEquals(got, expected);
+});

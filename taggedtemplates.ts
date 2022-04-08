@@ -7,7 +7,7 @@ export function j(
     .map((string: string, i: number) => {
       return Array.isArray(substitutions[i])
         ? string + (substitutions[i] as Array<unknown>).join("")
-        : string + (substitutions[i] || "");
+        : string + (substitutions[i] ?? "");
     })
     .join("");
 }
